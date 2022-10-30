@@ -1,15 +1,23 @@
 package View;
 
+import DAO.ConnectionFactory;
 import Model.Agendamento;
 import Model.Cliente;
 import Model.Servico;
 import Model.Usuario;
 
+
 public class Main {
 
     public static void main(String[] args) {
 
-        Usuario usuario = new Usuario(01, "Admin", "admin", "ADM", "22/05/1969", "85989732122", "will@gmail.com", "admin@2022");
+        //ConnectionFactory cn = new ConnectionFactory();
+        //cn.getConexao();
+        
+        MenuAdmin crudAdmin = new MenuAdmin();
+        crudAdmin.setVisible(true);
+        
+        /*Usuario usuario = new Usuario(01, "Admin", "admin", "ADM", "22/05/1969", "85989732122", "will@gmail.com", "admin@2022");
 
         Cliente cliente = new Cliente(01, "Will", "Lima", "23/01/2001", "85989732122", "will@gmail.com", "182306");
 
@@ -21,6 +29,6 @@ public class Main {
         cliente.visualizarCadastro();
         usuario.visualizarUsuario();
         
-        System.out.println(agendamento.getCliente().getDataNascimento());
+        System.out.println(agendamento.getCliente().getDataNascimento());*/
     }
 }

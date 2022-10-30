@@ -23,6 +23,13 @@ abstract public class Pessoa {
         this.nome = nome;
     }
 
+    public Pessoa(String nome, String sobrenome, String telefone, String email) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.telefone = telefone;
+        this.email = email;
+    }
+
     public Pessoa(int id, String nome, String sobrenome, String dataNascimento, String telefone, String email) {
         this.id = id;
         this.nome = nome;
