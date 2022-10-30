@@ -11,12 +11,12 @@ public class ConnectionFactory {
     public Connection getConexao() {
         try {
             conexao = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/crudescola", "root", "");
-            if (conexao != null) {
+            /*if (conexao != null) {
                 System.out.println("Conexao estabelecida com o banco de dados!!");
-            }
+            }*/
         } catch (SQLException e) {
             System.out.println(e);
         }
-        return null;
+        return conexao;
     }
 }
